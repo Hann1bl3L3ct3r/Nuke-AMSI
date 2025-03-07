@@ -27,17 +27,13 @@ NukeAMSI uses several advanced techniques to achieve its goals:
   
 - *Advanced Error Handling*: NukeAMSI includes robust error handling to ensure smooth operation even in complex environments. It carefully checks for and handles potential failures, reducing the likelihood of detection or script failure.
 
+### Modifications
 
-### Usage Steps
-1. First lets try running mimikatz in our powershell shell 
-![mimikatz amsi trigger](https://github.com/user-attachments/assets/0003e944-34a8-477f-b900-fc6b67a3041f)
-As we can see amsi Triggered.<br><br>
-2. Now, let's run our tool 
-You will be prompted to confirm your intent before the script proceeds to neutralize AMSI within the session.
-![Running nukeamsi](https://github.com/user-attachments/assets/ce380592-5b7f-4521-ac55-3b503eb1c62d)<br><br>
+This version of NukeAMSI has been modified in the following ways: 
 
-3. Now we can run mimikatz without worrying about windows defender bothering us.
-![nukeamsi2](https://github.com/user-attachments/assets/8bff87d5-797b-4a53-89ad-4a7978ec6833)
+- Execute immediately on call
+- Output has been formatted for easier reading with [+] for positive output and [-] for errors
+- NtWriteVirtualMemory is now called indirectly to improve stealth and minimize risk of detection (NtWriteVirtualMemory is a common call for loaders and is often flagged)
 
 ### Conclusion
 
