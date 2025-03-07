@@ -4,7 +4,6 @@ The AMSI Nuke Script is a PowerShell-based utility designed to modify the Anti-M
 
 ### Concepts utilized
 - Anti-Malware Scan Interface (AMSI) : The Windows Antimalware Scan Interface (AMSI) is a pivotal component in Microsoft’s security architecture, designed to enhance the detection of malicious scripts and behaviors by providing applications and services with a standardized interface to request content scans. As cyber threats evolve, so do the techniques employed by attackers to evade such defenses.
-- 
 - Windows API Functions:
 Utilized to manipulate process memory and load dynamic link libraries (NTDll.dll & Kernel32.dll).
 Functions include NtOpenProcess, NtWriteVirtualMemory, VirtualProtectEx, and others.
